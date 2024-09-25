@@ -4,9 +4,9 @@ I made this repo to be able to share with you the details of how I fine-tuned th
 
 ## File structure
 
-*image-caption.ipynb: code to automatically caption images to use for training.
-*train-flux.ipynb: code to train the Flux model.
-*flux-lora-img-gen-results.ipynb: code to run inference using the fine-tuned weights.
+* **image-caption.ipynb**: code to automatically caption images to use for training.
+* **train-flux.ipynb**: code to train the Flux model.
+* **flux-lora-img-gen-results.ipynb**: code to run inference using the fine-tuned weights.
 
 ## Hardware requirements
 In order to train you would need at least 24 GB VRAM, and currently there is support for single-GPU, so you should go for a SageMaker notebook running on a G5 or higher. For inference, currently you need a bit more, at least 28GB VRAM. I couldn't run inference on our ML-PT account, I ended up renting an instance on Vast.AI with 48GB VRAM. For storage, you would need at least 100GB of storage.
@@ -36,9 +36,9 @@ Next, generate a Hugging Face API token on your account and log in:
 ### Step 4: Define training parameters
 
 On the first cell of the `train-flux.ipynb` you would need to define:
-* INPUT_FOLDER: where your images and captions are stored),
-* OUTPUT_FOLDER: where to store results like samples and weights,
-* TRIGGER_WORD: the name/word for the object or subject you are finetuning on. 
+* **INPUT_FOLDER**: where your images and captions are stored),
+* **OUTPUT_FOLDER**: where to store results like samples and weights,
+* **TRIGGER_WORD**: the name/word for the object or subject you are finetuning on. 
 
 and a few other training parameters upon which you can play on, like after how many steps you would like to save the weights or produce sample images to measure progress. For your first time I would leave them as is, and adjust on subsequent training runs if you feel the need for it. 
 
