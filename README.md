@@ -54,10 +54,10 @@ Finally, run the training job using the last cell of the notebook. The actual tr
 
 Finally, you can use the `flux-lora-img-gen-results.ipynb` notebook to use your fine-tuned model and generate cool images with it. There are several parameters to consider when running the inference:
 
-* prompt and negative prompt: the actual textual description of the image you want to generate. Apparently Flux relies on plain text prompts, different to Stable diffusion which had a bunch of flags and parameters. For inspiration you could visit [PromptHero](https://prompthero.com/flux-prompts?__cf_chl_tk=nKmeQBc9IU6dIH9o44wP3ak3HplrZ71Rfq_jM1gC8k4-1727291842-0.0.1.1-7956), even though I found it to be quite biased towards suggestive images 😒. Also, I left a couple interesting prompts on the inference notebook.
-* num_inference_steps: how many inference passes the model does before returning the image. You would have to find a number that gives you the best number, I found that between 20 and 40 I had the best results.
-* width
-* height
+* **prompt and negative prompt**: the actual textual description of the image you want to generate. Apparently Flux relies on plain text prompts, different to Stable diffusion which had a bunch of flags and parameters. For inspiration you could visit [PromptHero](https://prompthero.com/flux-prompts?__cf_chl_tk=nKmeQBc9IU6dIH9o44wP3ak3HplrZ71Rfq_jM1gC8k4-1727291842-0.0.1.1-7956), even though I found it to be quite biased towards suggestive images 😒. Also, I left a couple interesting prompts on the inference notebook.
+* **num_inference_steps**: how many inference passes the model does before returning the image. You would have to find a number that gives you the best number, I found that between 20 and 40 I had the best results.
+* **width**
+* **height**
 
 ## Extra info
 
