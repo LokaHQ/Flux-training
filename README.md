@@ -2,6 +2,12 @@
 
 I made this repo to be able to share with you the details of how I fine-tuned the Flux model. The main steps were made following this [tutorial](https://medium.com/@geronimo7/how-to-train-a-flux1-lora-for-1-dfd1800afce5). 
 
+## File structure
+
+*image-caption.ipynb: code to automatically caption images to use for training.
+*train-flux.ipynb: code to train the Flux model.
+*flux-lora-img-gen-results.ipynb: code to run inference using the fine-tuned weights.
+
 ## Hardware requirements
 In order to train you would need at least 24 GB VRAM, and currently there is support for single-GPU, so you should go for a SageMaker notebook running on a G5 or higher. For inference, currently you need a bit more, at least 28GB VRAM. I couldn't run inference on our ML-PT account, I ended up renting an instance on Vast.AI with 48GB VRAM. For storage, you would need at least 100GB of storage.
 
